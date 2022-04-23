@@ -43,7 +43,7 @@ public class SampleXmlApplication {
     this.hotelMapper = hotelMapper;
   }
   
-  @Scheduled(initialDelay = 1000, fixedRate = 5000)
+  //@Scheduled(initialDelay = 1000, fixedRate = 5000)
   public void sample() {
       //System.out.println(this.cityDao.selectCityById(1));
       System.out.println(this.hotelMapper.selectByCityId(1));
